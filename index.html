@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Revanno Gavin Raysha Widayat — Student Developer & Future Software Engineer. SMKN 2 Surakarta, PPLG. Portfolio of projects in Java, PHP, Android, and more." />
+  <title>Revanno Gavin — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span>Revanno Gavin</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="btn btn-primary nav-cta">Let's Connect</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-container">
+      <div class="hero-content" data-animate="fade-up">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span class="mono-text">SMKN 2 Surakarta &nbsp;·&nbsp; PPLG</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="text-gradient">Revanno Gavin</span>
+        </h1>
+        <p class="hero-subtitle">Student Developer &amp; Future Software Engineer</p>
+        <p class="hero-description">
+          Siswa PPLG yang passionate dalam software development, programming, dan game development.
+          Terus belajar, berlatih, dan membangun project nyata — satu langkah menuju engineer profesional.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M9 9h6v6H9z"/></svg>
+            View My Projects
+          </a>
+          <a href="#about" class="btn btn-ghost btn-lg">
+            About Me
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual" data-animate="fade-left">
+        <div class="code-card">
+          <div class="code-card-header">
+            <div class="code-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="mono-text code-filename">~/revanno/dev.java</span>
+          </div>
+          <pre class="code-block"><code><span class="code-kw">public class</span> <span class="code-cls">RevannoGavin</span> {
+
+  <span class="code-cm">// Student Developer @ SMKN 2 Surakarta</span>
+
+  <span class="code-kw">private</span> String major = <span class="code-str">"PPLG"</span>;
+  <span class="code-kw">private</span> String[] passions = {
+    <span class="code-str">"Software Development"</span>,
+    <span class="code-str">"Game Development"</span>,
+    <span class="code-str">"Problem Solving"</span>
+  };
+
+  <span class="code-kw">public</span> String getStatus() {
+    <span class="code-kw">return</span> <span class="code-str">"Always Learning 🚀"</span>;
+  }
+}</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span class="mono-text">scroll down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag mono-text">001 &nbsp;/&nbsp; about</span>
+        <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-col" data-animate="fade-right">
+          <div class="avatar-card">
+            <div class="avatar-glow"></div>
+            <div class="avatar-placeholder">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+              <p class="mono-text" style="font-size:11px;margin-top:8px;color:var(--text-muted)">Foto Profil</p>
+            </div>
+            <div class="avatar-info">
+              <p class="avatar-name">Revanno Gavin</p>
+              <p class="avatar-role mono-text">Student Developer</p>
+              <div class="status-badge">
+                <span class="status-dot"></span>
+                <span>Available to Learn &amp; Collaborate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content-col" data-animate="fade-left">
+          <h3 class="about-heading">Revanno Gavin Raysha Widayat</h3>
+          <div class="about-meta">
+            <div class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <span>SMKN 2 Surakarta</span>
+            </div>
+            <div class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <span>Pengembangan Perangkat Lunak dan Gim (PPLG)</span>
+            </div>
+            <div class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Surakarta, Indonesia</span>
+            </div>
+          </div>
+          <p class="about-text">
+            Saya adalah siswa PPLG yang sedang dalam perjalanan mengembangkan kemampuan programming dan software development.
+            Berawal dari ketertarikan pada teknologi, saya mulai belajar dasar-dasar pemrograman dan kini terus berlatih
+            melalui berbagai project sekolah maupun proyek mandiri.
+          </p>
+          <p class="about-text">
+            Minat saya meluas ke software development, game development, mobile development, dan UI/UX design.
+            Saya percaya bahwa konsistensi dalam belajar dan keberanian mencoba hal baru adalah kunci untuk berkembang
+            sebagai seorang developer.
+          </p>
+          <div class="about-interests">
+            <span class="chip">💻 Software Dev</span>
+            <span class="chip">🎮 Game Dev</span>
+            <span class="chip">📱 Mobile Dev</span>
+            <span class="chip">🎨 UI/UX</span>
+            <span class="chip">🔧 Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag mono-text">002 &nbsp;/&nbsp; skills</span>
+        <h2 class="section-title">My <span class="text-gradient">Skills</span></h2>
+        <p class="section-desc">Teknologi dan tools yang sedang saya pelajari dan kembangkan.</p>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category-card" data-animate="fade-up" data-delay="0">
+          <div class="skill-cat-icon cat-frontend">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="skill-cat-title">Web Development</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">HTML &amp; CSS</span><span class="skill-badge familiar">Familiar</span></div>
+            <div class="skill-item"><span class="skill-name">PHP</span><span class="skill-badge developing">Developing</span></div>
+            <div class="skill-item"><span class="skill-name">MySQL</span><span class="skill-badge developing">Developing</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category-card" data-animate="fade-up" data-delay="100">
+          <div class="skill-cat-icon cat-backend">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3 class="skill-cat-title">Programming</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Java</span><span class="skill-badge developing">Developing</span></div>
+            <div class="skill-item"><span class="skill-name">Python</span><span class="skill-badge learning">Learning</span></div>
+            <div class="skill-item"><span class="skill-name">PHP</span><span class="skill-badge developing">Developing</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category-card" data-animate="fade-up" data-delay="200">
+          <div class="skill-cat-icon cat-mobile">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3 class="skill-cat-title">Mobile Dev</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Android Studio</span><span class="skill-badge learning">Learning</span></div>
+            <div class="skill-item"><span class="skill-name">Java (Android)</span><span class="skill-badge developing">Developing</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category-card" data-animate="fade-up" data-delay="300">
+          <div class="skill-cat-icon cat-database">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3 class="skill-cat-title">Database</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">MySQL</span><span class="skill-badge developing">Developing</span></div>
+            <div class="skill-item"><span class="skill-name">Microsoft Access</span><span class="skill-badge familiar">Familiar</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category-card" data-animate="fade-up" data-delay="400">
+          <div class="skill-cat-icon cat-tools">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3 class="skill-cat-title">Tools &amp; Design</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Git &amp; GitHub</span><span class="skill-badge learning">Learning</span></div>
+            <div class="skill-item"><span class="skill-name">Figma</span><span class="skill-badge familiar">Familiar</span></div>
+            <div class="skill-item"><span class="skill-name">Blender</span><span class="skill-badge learning">Learning</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category-card" data-animate="fade-up" data-delay="500">
+          <div class="skill-cat-icon cat-game">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4M8 10v4"/><circle cx="16" cy="12" r="1" fill="currentColor"/><circle cx="18" cy="10" r="1" fill="currentColor"/></svg>
+          </div>
+          <h3 class="skill-cat-title">Game Dev</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-name">Game Dev Basics</span><span class="skill-badge learning">Learning</span></div>
+            <div class="skill-item"><span class="skill-name">Blender 3D</span><span class="skill-badge learning">Learning</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="skill-legend" data-animate="fade-up">
+        <span class="mono-text" style="color:var(--text-muted);font-size:12px;">Legend:</span>
+        <span class="skill-badge learning">Learning</span>
+        <span class="skill-badge developing">Developing</span>
+        <span class="skill-badge familiar">Familiar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag mono-text">003 &nbsp;/&nbsp; projects</span>
+        <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="section-desc">Project yang pernah saya kerjakan selama belajar di SMKN 2 Surakarta.</p>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card" data-animate="fade-up" data-delay="0">
+          <div class="project-card-header">
+            <div class="project-card-topbar">
+              <span class="mono-text" style="color:var(--text-muted);font-size:11px;">~/projects/tabungan-siswa</span>
+              <div class="project-spotlight"></div>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </div>
+            <h3 class="project-title">Tabungan Siswa</h3>
+            <p class="project-desc">
+              Program Java untuk mengelola data tabungan siswa. Fitur meliputi tambah/tarik saldo,
+              manajemen data siswa, edit, hapus, dan laporan saldo menggunakan array &amp; CRUD-like logic.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-java">Java</span>
+              <span class="tag">Array</span>
+              <span class="tag">CRUD Logic</span>
+              <span class="tag">CLI</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="#" class="btn btn-sm btn-outline">View Project</a>
+            <a href="#" class="btn btn-sm btn-ghost" aria-label="GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-animate="fade-up" data-delay="100">
+          <div class="project-card-header">
+            <div class="project-card-topbar">
+              <span class="mono-text" style="color:var(--text-muted);font-size:11px;">~/projects/school-management</span>
+              <div class="project-spotlight"></div>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="project-title">School Management System</h3>
+            <p class="project-desc">
+              Sistem informasi manajemen sekolah berbasis PHP dan MySQL. Mendukung operasi CRUD lengkap
+              untuk pengelolaan data siswa dan data sekolah melalui antarmuka web.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-php">PHP</span>
+              <span class="tag tag-db">MySQL</span>
+              <span class="tag">CRUD</span>
+              <span class="tag">Web App</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="#" class="btn btn-sm btn-outline">View Project</a>
+            <a href="#" class="btn btn-sm btn-ghost" aria-label="GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-animate="fade-up" data-delay="200">
+          <div class="project-card-header">
+            <div class="project-card-topbar">
+              <span class="mono-text" style="color:var(--text-muted);font-size:11px;">~/projects/coffee-order-app</span>
+              <div class="project-spotlight"></div>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3 class="project-title">Coffee Order App</h3>
+            <p class="project-desc">
+              Aplikasi Android untuk pemesanan kopi dan makanan. Dilengkapi menu list, quantity counter,
+              cart management, dan proses checkout yang intuitif menggunakan Android Studio &amp; Java.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-android">Android</span>
+              <span class="tag tag-java">Java</span>
+              <span class="tag">UI/UX</span>
+              <span class="tag">Mobile</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="#" class="btn btn-sm btn-outline">View Project</a>
+            <a href="#" class="btn btn-sm btn-ghost" aria-label="GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card" data-animate="fade-up" data-delay="300">
+          <div class="project-card-header">
+            <div class="project-card-topbar">
+              <span class="mono-text" style="color:var(--text-muted);font-size:11px;">~/projects/game-rental</span>
+              <div class="project-spotlight"></div>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4M8 10v4"/><circle cx="16" cy="12" r="1" fill="currentColor"/><circle cx="18" cy="10" r="1" fill="currentColor"/></svg>
+            </div>
+            <h3 class="project-title">Game Rental Program</h3>
+            <p class="project-desc">
+              Program Python sederhana untuk mengelola sistem penyewaan game. Mendukung transaksi sewa,
+              pencatatan data, dan manajemen stok game yang tersedia.
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-python">Python</span>
+              <span class="tag">Logic</span>
+              <span class="tag">CLI</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="#" class="btn btn-sm btn-outline">View Project</a>
+            <a href="#" class="btn btn-sm btn-ghost" aria-label="GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag mono-text">004 &nbsp;/&nbsp; education</span>
+        <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-animate="fade-right">
+          <div class="timeline-line"></div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-period mono-text">SD</span>
+            <h3 class="timeline-title">SDN Kemasan 1</h3>
+            <p class="timeline-desc">Sekolah Dasar — Fondasi pendidikan dasar.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate="fade-right">
+          <div class="timeline-line"></div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-period mono-text">SMP</span>
+            <h3 class="timeline-title">SMPN 10 Surakarta</h3>
+            <p class="timeline-desc">Sekolah Menengah Pertama — Mulai mengenal dunia teknologi dan komputer.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-active" data-animate="fade-right">
+          <div class="timeline-line"></div>
+          <div class="timeline-dot timeline-dot-active"></div>
+          <div class="timeline-card timeline-card-active">
+            <div class="timeline-active-badge">
+              <span class="status-dot"></span>
+              <span class="mono-text" style="font-size:11px;">Sedang Berlangsung</span>
+            </div>
+            <span class="timeline-period mono-text">SMK · 2023–sekarang</span>
+            <h3 class="timeline-title">SMKN 2 Surakarta</h3>
+            <p class="timeline-desc">
+              Jurusan Pengembangan Perangkat Lunak dan Gim (PPLG). Belajar pemrograman, database,
+              mobile development, UI/UX, dan berbagai teknologi software modern.
+            </p>
+            <div class="timeline-tags">
+              <span class="chip">Java</span>
+              <span class="chip">PHP</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">Android</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LEARNING JOURNEY ========== -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag mono-text">005 &nbsp;/&nbsp; journey</span>
+        <h2 class="section-title">Learning <span class="text-gradient">Journey</span></h2>
+        <p class="section-desc">Perjalanan saya dari belajar dasar hingga membangun project nyata.</p>
+      </div>
+      <div class="journey-steps">
+        <div class="journey-step" data-animate="fade-up" data-delay="0">
+          <div class="journey-step-num mono-text">01</div>
+          <div class="journey-step-icon">📖</div>
+          <h3 class="journey-step-title">Learn</h3>
+          <p class="journey-step-desc">Memulai dari dasar — sintaks, logika, dan konsep pemrograman. Belajar HTML, CSS, Java, dan PHP dari kurikulum sekolah dan sumber online.</p>
+        </div>
+        <div class="journey-connector"></div>
+        <div class="journey-step" data-animate="fade-up" data-delay="150">
+          <div class="journey-step-num mono-text">02</div>
+          <div class="journey-step-icon">⚡</div>
+          <h3 class="journey-step-title">Practice</h3>
+          <p class="journey-step-desc">Berlatih dengan tugas sekolah, latihan coding, dan eksperimen kecil. Mencoba berbagai teknologi dan membangun pemahaman praktis.</p>
+        </div>
+        <div class="journey-connector"></div>
+        <div class="journey-step" data-animate="fade-up" data-delay="300">
+          <div class="journey-step-num mono-text">03</div>
+          <div class="journey-step-icon">🔨</div>
+          <h3 class="journey-step-title">Build</h3>
+          <p class="journey-step-desc">Mengaplikasikan ilmu ke project nyata — Tabungan Siswa, School Management System, Coffee Order App, dan project lainnya.</p>
+        </div>
+        <div class="journey-connector"></div>
+        <div class="journey-step" data-animate="fade-up" data-delay="450">
+          <div class="journey-step-num mono-text">04</div>
+          <div class="journey-step-icon">🚀</div>
+          <h3 class="journey-step-title">Improve</h3>
+          <p class="journey-step-desc">Terus evaluasi, perbaiki, dan tingkatkan. Belajar dari error, menerima feedback, dan bertumbuh menjadi developer yang lebih baik.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PERSONAL PRINCIPLE ========== -->
+  <section class="section section-alt principle-section">
+    <div class="container">
+      <div class="principle-card" data-animate="fade-up">
+        <div class="principle-glow"></div>
+        <div class="principle-quote-icon">"</div>
+        <blockquote class="principle-quote">
+          Be grateful for everything.
+        </blockquote>
+        <p class="principle-sub">
+          Dalam memahami seseorang atau sebuah masalah, jangan hanya melihat dari satu sudut pandang.
+          Setiap perspektif memiliki nilainya sendiri — dan rasa syukur membuka mata kita untuk melihat lebih luas.
+        </p>
+        <div class="principle-divider"></div>
+        <p class="principle-author mono-text">— Revanno Gavin</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FUTURE GOALS ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag mono-text">006 &nbsp;/&nbsp; goals</span>
+        <h2 class="section-title">Future <span class="text-gradient">Goals</span></h2>
+        <p class="section-desc">Target dan tujuan yang ingin saya capai ke depannya.</p>
+      </div>
+      <div class="goals-grid">
+        <div class="goal-card" data-animate="fade-up" data-delay="0">
+          <div class="goal-icon">💡</div>
+          <h3 class="goal-title">Skill Development</h3>
+          <p class="goal-desc">Mengembangkan kemampuan programming dan memahami konsep software engineering yang lebih dalam.</p>
+        </div>
+        <div class="goal-card" data-animate="fade-up" data-delay="100">
+          <div class="goal-icon">🎮</div>
+          <h3 class="goal-title">Build Complex Projects</h3>
+          <p class="goal-desc">Membuat software dan game yang lebih kompleks dan berdampak nyata.</p>
+        </div>
+        <div class="goal-card" data-animate="fade-up" data-delay="200">
+          <div class="goal-icon">🧠</div>
+          <h3 class="goal-title">Problem Solving</h3>
+          <p class="goal-desc">Meningkatkan kemampuan problem solving dan algorithmic thinking.</p>
+        </div>
+        <div class="goal-card" data-animate="fade-up" data-delay="300">
+          <div class="goal-icon">🎓</div>
+          <h3 class="goal-title">Academic Excellence</h3>
+          <p class="goal-desc">Mendapatkan hasil akademik yang baik dan melanjutkan pendidikan ke perguruan tinggi.</p>
+        </div>
+        <div class="goal-card" data-animate="fade-up" data-delay="400">
+          <div class="goal-icon">🌐</div>
+          <h3 class="goal-title">Higher Education</h3>
+          <p class="goal-desc">Melanjutkan studi di perguruan tinggi dengan jurusan yang relevan di bidang teknologi.</p>
+        </div>
+        <div class="goal-card" data-animate="fade-up" data-delay="500">
+          <div class="goal-icon">⚙️</div>
+          <h3 class="goal-title">Become a Developer</h3>
+          <p class="goal-desc">Menjadi software developer yang kompeten dan terus berkontribusi di dunia teknologi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag mono-text">007 &nbsp;/&nbsp; contact</span>
+        <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+        <p class="section-desc">Punya pertanyaan atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-animate="fade-right">
+          <p class="contact-text">
+            Saya terbuka untuk diskusi seputar programming, belajar bersama, atau sekadar berbagi pengalaman di dunia teknologi.
+            Silakan hubungi saya melalui salah satu platform berikut.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:your@email.com" class="contact-link" id="contact-email">
+              <div class="contact-link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-link-text">
+                <span class="contact-link-label mono-text">Email</span>
+                <span class="contact-link-value">your@email.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact-link" id="contact-github">
+              <div class="contact-link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div class="contact-link-text">
+                <span class="contact-link-label mono-text">GitHub</span>
+                <span class="contact-link-value">github.com/your-username</span>
+              </div>
+            </a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener" class="contact-link" id="contact-instagram">
+              <div class="contact-link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div class="contact-link-text">
+                <span class="contact-link-label mono-text">Instagram</span>
+                <span class="contact-link-value">@your.instagram</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-link" id="contact-linkedin">
+              <div class="contact-link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+              </div>
+              <div class="contact-link-text">
+                <span class="contact-link-label mono-text">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/your-profile</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-col" data-animate="fade-left">
+          <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="form-name" class="form-label mono-text">Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email" class="form-label mono-text">Email</label>
+              <input type="email" id="form-email" class="form-input" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="form-message" class="form-label mono-text">Message</label>
+              <textarea id="form-message" class="form-input form-textarea" placeholder="Say something..." required rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              Send Message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-grid-overlay"></div>
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span>Revanno Gavin</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline mono-text">Always learning. Always building.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy">
+        <p class="mono-text">© 2026 Revanno Gavin Raysha Widayat</p>
+        <p class="mono-text" style="color:var(--text-muted);font-size:12px;">Built with ❤️ &amp; lots of ☕</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
